@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio del aumento</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <fieldset>
+        <h1>Ejercicio del aumento</h1>
+    
+        <form action="#" method="post">
+            <input type="text"id='nombre'> <br><br>
+            <input type="number"id='ganancias'> <br><br><br>
+            <button type="button" onclick="cacular_aumento();">Calcular aumento</button>
+        </form>
+
+        <h2 id='Resultado'></h2>
+    </fieldset>
+</body>
+</html>
+
+<script>
+
+    function cacular_aumento(){
+       
+       var nombre =document.getElementById('nombre').value;
+       var ganancias = parseInt(document.getElementById('ganancias').value);
+       var aumento = 0;
+
+       if(ganancias > 1000000){
+            aumento = ganancias * 5/100;
+       }
+
+       if (ganancias < 800000){
+            aumento = ganancias * 10/100;
+       }
+
+       document.getElementById('Resultado').innerHTML = 'El aumento de '+ nombre +' es '+ aumento;
+
+    }
+
+</script>

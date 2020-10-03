@@ -1,0 +1,21 @@
+
+body{
+    text-align: center;
+}
+
+input{
+    border-radius: 7px;
+    font-size: 20px;
+}
+button{
+    border-radius: 7px;
+    color: rgb(41, 38, 41);
+    background-color: white;
+    font-size: 20px;
+}
+
+
+fieldset{
+    border-radius: 7px;
+    background-color: rgb(185, 236, 232);
+}
